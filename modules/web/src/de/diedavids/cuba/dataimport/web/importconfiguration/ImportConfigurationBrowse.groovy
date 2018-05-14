@@ -5,9 +5,11 @@ import com.haulmont.cuba.gui.WindowManager
 import com.haulmont.cuba.gui.components.AbstractLookup
 import com.haulmont.cuba.gui.components.Frame
 import com.haulmont.cuba.gui.components.actions.CreateAction
+import de.diedavids.cuba.dataimport.web.importable.Importable
 
 import javax.inject.Named
 
+@Importable(listComponent = "importConfigurationsTable")
 class ImportConfigurationBrowse extends AbstractLookup {
 
     @Named('importConfigurationsTable.create')
